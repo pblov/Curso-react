@@ -1,0 +1,63 @@
+.notes__main-content{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.notes__appbar{
+    align-items: center;
+    background-color: $primary;
+    color:white;
+    display:flex;
+    justify-content: space-between;
+    padding:10px 20px;
+    span{
+        font-size:15px;
+       
+    }
+}
+
+.notes__hover:hover{
+    color:darken($color: $light-grey, $amount: 20)
+}
+
+
+.notes__content{
+    display:flex;
+    flex-direction: column;
+    height: 100%;
+    padding:20px;
+}
+
+.notes__title-input, .notes__textarea{
+
+    border:none;
+
+    &:focus{
+        outline:none;
+    }
+
+}
+
+
+.notes__title-input{
+    color:$dark-grey;
+    font-size:18px;
+    font-weight: bold;
+    margin-bottom:10px;
+
+}
+
+.notes__textarea{
+  
+    color: $dark-grey;
+    font-size:15px;
+    resize:none;
+    flex:1 1 auto;
+}
+
+.note__image img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 5px 5px $dark-grey;
+}

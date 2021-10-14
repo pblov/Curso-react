@@ -1,0 +1,9 @@
+.link{
+    text-decoration:none;
+    color:$dark-grey;
+
+    &:hover{
+        color: darken($color: $dark-grey, $amount: 50);
+        font-weight: 600;
+    }
+}

@@ -1,0 +1,134 @@
+
+.journal__main-content{
+    display:flex;
+}
+
+.journal__sidebar{
+    background-color:$dark-grey;
+    color:white;
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    padding: 0px 10px;
+    width:450px;
+}
+
+.journal__sidebar-navbar{
+    display:flex;
+    justify-content: space-between;
+}
+
+.journal__sidebar-navbar h3{
+    font-weight: 500;
+}
+
+
+.journal__btn{
+
+    border:1px solid transparent;
+    color:white;
+    cursor:pointer;
+    font-size:14px;
+    font-weight: 700;
+    background-color: transparent;
+    letter-spacing: 0.1px;
+    transition: color .5s ease;
+
+    &:hover{
+
+        color:lighten($color: $primary, $amount: 15);
+    }
+}
+
+
+
+.journal__new-entry{
+    align-items: center;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 30px;
+    width: 100%;
+
+    transition: color .3s ease;
+
+    &:hover {
+        color: darken($color: white, $amount: 35);
+    }
+}
+
+
+.journal__entries{
+    margin-top:30px;
+    flex: 1 1 auto;
+    overflow-y:scroll;
+}
+
+.journal__entries::-webkit-scrollbar {
+    display: none;
+  }
+
+
+
+.journal__entry{
+    background-color: whitesmoke;
+    border-radius: 2px;
+    color:$dark-grey;
+    display:flex;
+    justify-content: space-between;
+    margin-bottom:10px;
+    overflow:hidden;
+    transition:background-color .5s ease-out;
+    &:hover{
+        background-color: lighten($color: $dark-grey, $amount: 55);
+    }
+
+}
+
+.journal__entry-picture{
+    height: auto;
+    width: 75px;
+}
+
+.journal__style-picture{
+    background-size: cover;
+    background-image: url('https://images2.alphacoders.com/133/thumb-1920-133352.jpg');
+}
+
+
+.journal__entry-body{
+
+    padding:10px;
+}
+
+.journal__entry-title{
+
+    font-size:14px;
+    font-weight: bold;
+}
+
+
+.journal__entry-content{
+    line-height: 15px;
+    font-size:12px;
+}
+
+
+.journal__entry-date-box{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5px;
+}
+
+.journal__entry-date-box span{
+    font-size: 12px;
+}
+
+
+
+
+
+
