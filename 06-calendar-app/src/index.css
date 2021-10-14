@@ -1,0 +1,201 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;600;700;800&display=swap');
+
+
+html{
+    box-sizing: border-box;
+    
+}
+
+*, *:before, *:after{
+    margin:0;
+    padding:0;
+    box-sizing:inherit;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/*Calendar*/
+.calendar-screen{
+    display:flex;
+    flex-flow: column;
+    height: 100vh;
+}
+
+
+.rbc-calendar{
+    padding:30px;
+    height: 100%;
+}
+
+.rbc-btn-group{
+    font-size:14px;
+}
+
+
+.fn14{
+    font-size: 14px;
+}
+
+
+/*Date Picker*/
+
+.react-datetime-picker{
+   font-size:14px;
+}
+
+.react-datetime-picker input:focus{
+    outline: none;
+}
+
+.react-datetime-picker__wrapper{
+    border: 0px solid gray !important;
+}
+
+
+
+/*Navbar*/
+
+.navbar-style{
+    color:white;
+    background-color:
+}
+
+
+
+/* Modal */
+
+
+.ReactModalPortal > div{
+    opacity: 0;
+}
+
+.ReactModalPortal .ReactModal__Overlay {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    transition: opacity .2s ease-in-out;
+    z-index: 999;
+}
+
+.modal-fondo {
+    background-color: rgba(0, 0, 0, 0.3);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+    position: fixed;
+}
+
+.ReactModalPortal .ReactModal__Overlay--after-open {
+    opacity: 1;
+}
+
+.ReactModalPortal .ReactModal__Overlay--before-close {
+    opacity: 0;
+}
+
+.modal {
+    background: white;
+    border-radius: 5px;
+    color: rgb(51, 51, 51);
+    display: inline;
+    max-height: 680px;
+    max-width: 500px;
+    outline: none;
+    padding: 30px;
+    
+}
+
+
+.title-modal{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0px 10px;
+}
+
+.title-modal i{
+    font-size:13px;
+    cursor:pointer;
+}
+
+.form-hour{
+    display:flex;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+.btnModalSave{
+    font-size:16px;
+    background-color: white;
+    border-color:hsl(195, 100%, 27%) !important;
+    color:hsl(195, 100%, 27%);
+}
+
+.btnModalSave:hover, .btnModalSave:active, .btnModalSave:focus{
+    background-color: hsl(195, 100%, 27%) !important;
+    color:white;
+}
+
+.notvalid{
+    color:#dc3545 !important;
+}
+
+
+label{
+    font-size: 16px;
+}
+
+input::placeholder,textarea::placeholder,input[type=text],textarea[type=text]{
+    font-size:13px;
+}
+
+#emailHelp{
+    font-size:11px;
+}
+
+
+
+
+/* Fab  add*/
+
+.fab{
+    border-radius:100%;
+    bottom:25px;
+    font-size:24px;
+    width: 60px;
+    height: 60px;
+    position: fixed;
+    right: 25px;
+    background-color: hsl(195, 100%, 27%) !important;
+    border: 1px solid hsl(195, 100%, 27%) !important;
+}
+
+.fab:hover, .fab:focus, .fab:active{
+    transition: .4s all ease-in-out;
+    background-color: hsl(195, 100%, 17%) !important;
+    border: 1px solid hsl(195, 100%, 17%) !important;
+}
+   
+
+/*Fab delete*/
+
+.fab-danger{
+    border-radius:100%;
+    bottom:25px;
+    width: 60px;
+    height: 60px;
+    padding:10px;
+    position: fixed;
+    left:30px;
+}

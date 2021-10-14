@@ -1,0 +1,77 @@
+.login-container{
+    margin-top: 10%;
+}
+.login-form-1{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    box-shadow: -1px 1px 10px 2px hsl(0, 0%, 73%);
+    padding: 5%;
+}
+.login-form-1 h3{
+    text-align: center;
+    color: #333;
+}
+
+input[type=text],
+input[type=email],
+input[type=password]{
+    font-weight: 400;
+    font-size:14px;
+}
+
+
+
+.login-form-2{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    box-shadow: -1px 1px 10px 2px hsl(0, 0%, 73%);
+    padding: 5%;
+    background: hsl(195, 100%, 27%);
+}
+.login-form-2 h3{
+    text-align: center;
+    color: #fff;
+}
+.login-container form{
+    padding: 10%;
+}
+.btnSubmit{
+    width: 50%;
+    border-radius: .25rem;
+    padding: 2%;
+    font-size:16px;
+    font-weight: 700;
+    border: none;
+    cursor: pointer;
+}
+.login-form-1 .btnSubmit{
+    color: #fff;
+    background-color: hsl(195, 100%, 27%);
+}
+.login-form-2 .btnSubmit{
+    background-color: #fff;
+    color: hsl(195, 100%, 27%);
+}
+.login-form-2 .ForgetPwd{
+    color: #fff;
+    font-weight: 600;
+    text-decoration: none;
+}
+.login-form-1 .ForgetPwd{
+    color: #0062cc;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+.btnSubmit:hover{
+
+    transition: all .4s ease-in-out;
+    background-color: hsl(195, 100%, 17%);
+}
+
+.btnCrear:hover{
+
+    transition: all .4s ease-in-out;
+    background-color: rgb(199, 199, 199) !important;
+}
