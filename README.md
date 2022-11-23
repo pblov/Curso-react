@@ -1,3 +1,3 @@
 # Curso-react
 
-Curso de Fernando Herrera con ejercicios prácticos.
+Curso de Fernando Herrera y otros con ejercicios prácticos.
