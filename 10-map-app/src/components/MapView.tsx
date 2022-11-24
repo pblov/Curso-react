@@ -6,9 +6,11 @@ import {
   MapViewLoading,
   MapViewLoadingContainer
 } from './MapViewStyles';
+import { MapContext } from 'context/map/MapContext';
 
 export const MapView = () => {
   const { isLoading, userLocation } = useContext(PlacesContext);
+  const { setMap } = useContext(MapContext);
   const mapDiv = useRef<HTMLDivElement>(null);
   useLayoutEffect(() => {
     if (!isLoading) {
@@ -18,6 +20,7 @@ export const MapView = () => {
         center: userLocation,
         zoom: 9
       });
+      setMap(map);
     }
   }, [isLoading]);
 
