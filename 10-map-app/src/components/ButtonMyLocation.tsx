@@ -17,8 +17,8 @@ export const ButtonMyLocation = () => {
     });
   };
   return (
-    <LocationButton onClick={handleLocationClick} startIcon={<RoomIcon />}>
-      Mi ubicación
+    <LocationButton onClick={handleLocationClick}>
+      <RoomIcon />
     </LocationButton>
   );
 };

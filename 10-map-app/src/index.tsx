@@ -4,9 +4,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 
 import mapboxgl from 'mapbox-gl'; // or "const mapboxgl = require('mapbox-gl');"
+import { MAPBOX_API_TOKEN } from './constants/env';
 
-mapboxgl.accessToken =
-  'pk.eyJ1IjoicGJsb3YiLCJhIjoiY2xhdmVtdWlsMDR6ejN3b2FtZDVocXZvbyJ9.OS-S4ro5lMRMQrF1fUHvZA';
+mapboxgl.accessToken = MAPBOX_API_TOKEN;
 
 if (!navigator.geolocation) {
   alert('No tiene opción de Geolocación');

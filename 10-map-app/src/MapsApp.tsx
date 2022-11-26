@@ -4,11 +4,11 @@ import HomePage from 'pages/Home';
 
 const MapsApp = () => {
   return (
-    <MapProvider>
-      <PlacesProvider>
+    <PlacesProvider>
+      <MapProvider>
         <HomePage />
-      </PlacesProvider>
-    </MapProvider>
+      </MapProvider>
+    </PlacesProvider>
   );
 };
 

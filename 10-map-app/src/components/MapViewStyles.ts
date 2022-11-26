@@ -14,7 +14,6 @@ export const MapViewLoading = styled(CircularProgress)({
 });
 
 export const MapViewContainer = styled('div')({
-  backgroundColor: 'red',
   height: '100vh',
   width: '100vw',
   position: 'fixed',
