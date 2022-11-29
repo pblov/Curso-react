@@ -1,20 +1,32 @@
-import { CircularProgress, Divider, List, ListItemButton } from '@mui/material';
+import {
+  CircularProgress,
+  Divider,
+  List,
+  ListItemButton,
+  IconButton
+} from '@mui/material';
 import { styled } from '@mui/system';
 
 interface SearchProps {
-  isActive: boolean;
+  isActivePlace: boolean;
 }
 
-export const SearchResultsList = styled(List)({
-  width: '100%',
-  maxWidth: 360,
-  backgroundColor: '#FFFFFF',
-  padding: 0
-});
+export const SearchResultsList = styled(List)<SearchProps>(
+  ({ isActivePlace }) => ({
+    width: '100%',
+    maxWidth: 360,
+    padding: 0,
+    backgroundColor: isActivePlace ? '#01579b ' : '#FFFFFF ',
+    '&:hover': {
+      backgroundColor: isActivePlace ? '#01579b ' : '#FFFFFF '
+    }
+  })
+);
 
 export const SearchResultsButton = styled(ListItemButton)<SearchProps>(
-  ({ isActive }) => ({
-    backgroundColor: isActive ? '#01579b' : '#FFFFFF'
+  ({ isActivePlace }) => ({
+    display: 'flex',
+    backgroundColor: isActivePlace ? '#01579b' : '#FFFFFF'
   })
 );
 
@@ -26,3 +38,10 @@ export const SearchResultsLoader = styled(CircularProgress)({
 export const SearchResultsDivider = styled(Divider)({
   borderColor: '#DFE5E8'
 });
+
+export const SearchAddressButton = styled(IconButton)<SearchProps>(
+  ({ isActivePlace }) => ({
+    border: isActivePlace ? '1px solid #FFFFFF' : '1px solid #DFE5E8',
+    color: isActivePlace ? '#FFFFFF' : '#263238'
+  })
+);

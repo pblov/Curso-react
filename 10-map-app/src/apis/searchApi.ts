@@ -1,8 +1,8 @@
 import axios from 'axios';
-import { GEOCODE_BASE_URL, MAPBOX_API_TOKEN } from '../constants/env';
+import { GEOCODE_PLACES, MAPBOX_API_TOKEN } from '../constants/env';
 
 const searchApi = axios.create({
-  baseURL: GEOCODE_BASE_URL,
+  baseURL: GEOCODE_PLACES,
   params: {
     limit: 5,
     language: 'es',
